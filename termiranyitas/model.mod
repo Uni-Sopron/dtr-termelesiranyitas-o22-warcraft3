@@ -13,6 +13,7 @@ param buildingCost{Buildings} >= 0, integer;
 param buildingTime{Buildings} >= 0, integer;
 param buildingValue{Buildings} >= 0, integer;
 param initialGold := 0;
+param initialAdvancedMining := 0;
 
 var builds{Days, Buildings} >= 0, integer;
 var mines{Days} >= 0, integer;
@@ -31,7 +32,7 @@ s.t. initializeGold:
     gold[0] = initialGold;
 
 s.t. initializeAdvancedMining:
-    advanedMining[0] = 0;
+    advanedMining[0] = initialAdvancedMining;
 
 s.t. calcGold{d in Days}:
     gold[d] = gold[d-1] + mines[d] * miningValue + advanedMining[d] - sum{b in Buildings} builds[d, b] * buildingCost[b];
