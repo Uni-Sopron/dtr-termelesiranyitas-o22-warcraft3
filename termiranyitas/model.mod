@@ -2,21 +2,21 @@ param dayCount >= 1, integer;
 set Days := 1..dayCount;
 
 
-param miningValue := 100;
-param miningDuration := 20;
-param advancedMiningValue := 60;
-param GameDuration := 2200;
-param workerCount := 10;
+param miningValue := 100; #arany
+param miningDuration := 20; #perc
+param advancedMiningValue := 60; #arany
+param GameDuration := 2200; #perc
+param workerCount := 10; #fő
 
 set Buildings;
-param buildingCost{Buildings} >= 0, integer;
-param buildingTime{Buildings} >= 0, integer;
-param buildingValue{Buildings} >= 0, integer;
-param initialGold := 0;
-param initialAdvancedMining := 0;
+param buildingCost{Buildings} >= 0, integer; #arany
+param buildingTime{Buildings} >= 0, integer; #perc
+param buildingValue{Buildings} >= 0, integer; #arany
+param initialGold := 0; #arany
+param initialAdvancedMining := 0; #arany
 
-var builds{Days, Buildings} >= 0, integer;
-var mines{Days} >= 0, integer;
+var builds{Days, Buildings} >= 0, integer; #hány fő építi az adott épületet
+var mines{Days} >= 0, integer; #hány fő bányászik
 
 var totalValuePrintf; #csak így íratja ki a printf
 var totalCostPrintf; #csak így íratja ki a printf
