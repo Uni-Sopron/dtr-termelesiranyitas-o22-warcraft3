@@ -2,7 +2,7 @@ Total Value: 8560
 
 Total Cost: 4280 <= Total Gold: 4740
 
-Total Duration: 2130
+Total Duration: 2130 <= Game Duration: 2200
 
 Day: 1          Mining Value: 900       Advanced Mining: 60     Gold at the end of the day: 840
 Day: 2          Mining Value: 1000      Advanced Mining: 60     Gold at the end of the day: 1900

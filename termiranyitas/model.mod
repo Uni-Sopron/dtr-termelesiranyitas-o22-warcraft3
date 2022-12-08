@@ -68,7 +68,7 @@ solve;
 
 printf "\nTotal Value: %g\n", totalValuePrintf;
 printf "\nTotal Cost: %g <= Total Gold: %g\n", totalCostPrintf, totalGoldPrintf;
-printf "\nTotal Duration: %g\n\n", totalDurationPrintf;
+printf "\nTotal Duration: %g <=\tGame Duration: %g\n\n", totalDurationPrintf, GameDuration;
 
 for{d in Days: mines[d]}{
         printf "Day: %s\t\tMining Value: %s\tAdvanced Mining: %s\tGold at the end of the day: %s\n",d,(mines[d] * miningValue), advanedMining[d], gold[d];
