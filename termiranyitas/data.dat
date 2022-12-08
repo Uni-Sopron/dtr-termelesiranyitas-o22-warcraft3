@@ -1,0 +1,51 @@
+set Buildings :=
+AltarOfKings
+ArcaneSanctum
+Tower
+ArcaneVault
+Blacksmith
+Farm
+LumberMill
+TownHall
+Workshop
+;
+
+param dayCount := 6;
+
+param buildingCost :=
+AltarOfKings	230
+ArcaneSanctum	290
+Tower	        170
+ArcaneVault	    160
+Blacksmith	    200
+Farm	        100
+LumberMill	    120
+TownHall	    590
+Workshop	    280
+;
+
+param buildingTime :=
+AltarOfKings	60
+ArcaneSanctum	70
+Tower	        50
+ArcaneVault	    60
+Blacksmith	    70
+Farm	        35
+LumberMill	    60
+TownHall	    180
+Workshop	    60
+;
+
+param buildingValue :=
+AltarOfKings	460
+ArcaneSanctum	580
+Tower	        340
+ArcaneVault	    320
+Blacksmith	    400
+Farm	        200
+LumberMill	    240
+TownHall	    1180
+Workshop	    560
+;
+
+end;
