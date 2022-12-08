@@ -67,8 +67,8 @@ printf "\nTotal Cost: %g <= Total Gold: %g\n", totalCostPrintf, totalGoldPrintf;
 printf "\nTotal Duration: %g\n\n", totalDurationPrintf;
 
 for{d in Days: mines[d]}{
-        printf "Days: %s\t\tMining Value: %s\tAdvanced Mining: %s\tGold at the end of the day: %s\n",d,(mines[d] * miningValue), advanedMining[d], gold[d];
+        printf "Day: %s\t\tMining Value: %s\tAdvanced Mining: %s\tGold at the end of the day: %s\n",d,(mines[d] * miningValue), advanedMining[d], gold[d];
 }
 for{d in Days, b in Buildings: builds[d, b]}{
-        printf "Days: %s\t\tBuilding Value: %s\tBuilding Cost: %s\tBuilding: %s\n",d,(builds[d, b] * buildingValue[b]), (builds[d, b] * buildingCost[b]),b;
+        printf "Day: %s\t\tBuilding Value: %s\tBuilding Cost: %s\tBuilding: %s\n",d,(builds[d, b] * buildingValue[b]), (builds[d, b] * buildingCost[b]),b;
 }
