@@ -1,0 +1,193 @@
+Problem:    model
+Rows:       21
+Columns:    65 (63 integer, 63 binary)
+Non-zeros:  381
+Status:     INTEGER OPTIMAL
+Objective:  TotalValue = 3200 (MAXimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 limitBuldCost
+                               -1600         -1600
+     2 haveToBuildAtLeastOne[1]
+                                   1             1             =
+     3 haveToBuildAtLeastOne[2]
+                                   1             1             =
+     4 haveToBuildAtLeastOne[3]
+                                   1             1             =
+     5 haveToBuildAtLeastOne[4]
+                                   1             1             =
+     6 haveToBuildAtLeastOne[5]
+                                   1             1             =
+     7 haveToBuildAtLeastOne[6]
+                                   1             1             =
+     8 haveToBuildAtLeastOne[7]
+                                   1             1             =
+     9 buildInTime               500                        2000
+    10 buildOneBuildingMaxTwoTimes[AltarOfKings]
+                                   0                           3
+    11 buildOneBuildingMaxTwoTimes[ArcaneSanctum]
+                                   1                           3
+    12 buildOneBuildingMaxTwoTimes[Tower]
+                                   0                           3
+    13 buildOneBuildingMaxTwoTimes[ArcaneVault]
+                                   0                           3
+    14 buildOneBuildingMaxTwoTimes[Blacksmith]
+                                   0                           3
+    15 buildOneBuildingMaxTwoTimes[Farm]
+                                   2                           3
+    16 buildOneBuildingMaxTwoTimes[LumberMill]
+                                   2                           3
+    17 buildOneBuildingMaxTwoTimes[TownHall]
+                                   1                           3
+    18 buildOneBuildingMaxTwoTimes[Workshop]
+                                   1                           3
+    19 getTotalValue
+                                   0            -0             =
+    20 getTotalCost                0            -0             =
+    21 TotalValue               3200
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 builds[1,AltarOfKings]
+                    *              0             0             1
+     2 builds[1,ArcaneSanctum]
+                    *              0             0             1
+     3 builds[1,Tower]
+                    *              0             0             1
+     4 builds[1,ArcaneVault]
+                    *              0             0             1
+     5 builds[1,Blacksmith]
+                    *              0             0             1
+     6 builds[1,Farm]
+                    *              0             0             1
+     7 builds[1,LumberMill]
+                    *              1             0             1
+     8 builds[1,TownHall]
+                    *              0             0             1
+     9 builds[1,Workshop]
+                    *              0             0             1
+    10 builds[2,AltarOfKings]
+                    *              0             0             1
+    11 builds[2,ArcaneSanctum]
+                    *              0             0             1
+    12 builds[2,Tower]
+                    *              0             0             1
+    13 builds[2,ArcaneVault]
+                    *              0             0             1
+    14 builds[2,Blacksmith]
+                    *              0             0             1
+    15 builds[2,Farm]
+                    *              0             0             1
+    16 builds[2,LumberMill]
+                    *              0             0             1
+    17 builds[2,TownHall]
+                    *              1             0             1
+    18 builds[2,Workshop]
+                    *              0             0             1
+    19 builds[3,AltarOfKings]
+                    *              0             0             1
+    20 builds[3,ArcaneSanctum]
+                    *              0             0             1
+    21 builds[3,Tower]
+                    *              0             0             1
+    22 builds[3,ArcaneVault]
+                    *              0             0             1
+    23 builds[3,Blacksmith]
+                    *              0             0             1
+    24 builds[3,Farm]
+                    *              1             0             1
+    25 builds[3,LumberMill]
+                    *              0             0             1
+    26 builds[3,TownHall]
+                    *              0             0             1
+    27 builds[3,Workshop]
+                    *              0             0             1
+    28 builds[4,AltarOfKings]
+                    *              0             0             1
+    29 builds[4,ArcaneSanctum]
+                    *              1             0             1
+    30 builds[4,Tower]
+                    *              0             0             1
+    31 builds[4,ArcaneVault]
+                    *              0             0             1
+    32 builds[4,Blacksmith]
+                    *              0             0             1
+    33 builds[4,Farm]
+                    *              0             0             1
+    34 builds[4,LumberMill]
+                    *              0             0             1
+    35 builds[4,TownHall]
+                    *              0             0             1
+    36 builds[4,Workshop]
+                    *              0             0             1
+    37 builds[5,AltarOfKings]
+                    *              0             0             1
+    38 builds[5,ArcaneSanctum]
+                    *              0             0             1
+    39 builds[5,Tower]
+                    *              0             0             1
+    40 builds[5,ArcaneVault]
+                    *              0             0             1
+    41 builds[5,Blacksmith]
+                    *              0             0             1
+    42 builds[5,Farm]
+                    *              0             0             1
+    43 builds[5,LumberMill]
+                    *              0             0             1
+    44 builds[5,TownHall]
+                    *              0             0             1
+    45 builds[5,Workshop]
+                    *              1             0             1
+    46 builds[6,AltarOfKings]
+                    *              0             0             1
+    47 builds[6,ArcaneSanctum]
+                    *              0             0             1
+    48 builds[6,Tower]
+                    *              0             0             1
+    49 builds[6,ArcaneVault]
+                    *              0             0             1
+    50 builds[6,Blacksmith]
+                    *              0             0             1
+    51 builds[6,Farm]
+                    *              1             0             1
+    52 builds[6,LumberMill]
+                    *              0             0             1
+    53 builds[6,TownHall]
+                    *              0             0             1
+    54 builds[6,Workshop]
+                    *              0             0             1
+    55 builds[7,AltarOfKings]
+                    *              0             0             1
+    56 builds[7,ArcaneSanctum]
+                    *              0             0             1
+    57 builds[7,Tower]
+                    *              0             0             1
+    58 builds[7,ArcaneVault]
+                    *              0             0             1
+    59 builds[7,Blacksmith]
+                    *              0             0             1
+    60 builds[7,Farm]
+                    *              0             0             1
+    61 builds[7,LumberMill]
+                    *              1             0             1
+    62 builds[7,TownHall]
+                    *              0             0             1
+    63 builds[7,Workshop]
+                    *              0             0             1
+    64 totalValuePrintf
+                                3200
+    65 totalCostPrintf
+                                1600
+
+Integer feasibility conditions:
+
+INT.PE: max.abs.err. = 0.00e+00 on row 0
+        max.rel.err. = 0.00e+00 on row 0
+        High quality
+
+INT.PB: max.abs.err. = 0.00e+00 on row 0
+        max.rel.err. = 0.00e+00 on row 0
+        High quality
+
+End of output

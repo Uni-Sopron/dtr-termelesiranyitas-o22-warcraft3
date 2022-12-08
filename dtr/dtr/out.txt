@@ -1,0 +1,11 @@
+Total Value: 3200
+
+Total Cost: 1600
+
+Worker: 1       Building Value: 240     Building Cost: 120      Building: LumberMill
+Worker: 2       Building Value: 1180    Building Cost: 590      Building: TownHall
+Worker: 3       Building Value: 200     Building Cost: 100      Building: Farm
+Worker: 4       Building Value: 580     Building Cost: 290      Building: ArcaneSanctum
+Worker: 5       Building Value: 560     Building Cost: 280      Building: Workshop
+Worker: 6       Building Value: 200     Building Cost: 100      Building: Farm
+Worker: 7       Building Value: 240     Building Cost: 120      Building: LumberMill
