@@ -4,8 +4,8 @@ set Days := 1..dayCount;
 
 param miningValue := 100;
 param miningDuration := 20;
-param advancedMiningValue := 40;
-param GameDuration := 1300;
+param advancedMiningValue := 60;
+param GameDuration := 2200;
 param workerCount := 10;
 
 set Buildings;
@@ -22,13 +22,16 @@ var totalCostPrintf; #csak így íratja ki a printf
 var totalDurationPrintf; #csak így íratja ki a printf
 var totalGoldPrintf; #csak így íratja ki a printf
 var gold{0..dayCount} >= 0, integer;
-var advanedMining{Days} >= 0, integer;
+var advanedMining{0..dayCount} >= 0, integer;
 
 s.t. doSomething{d in Days}:
     sum{b in Buildings} builds[d, b] + mines[d] = workerCount;
 
 s.t. initializeGold:
     gold[0] = initialGold;
+
+s.t. initializeAdvancedMining:
+    advanedMining[0] = 0;
 
 s.t. calcGold{d in Days}:
     gold[d] = gold[d-1] + mines[d] * miningValue + advanedMining[d] - sum{b in Buildings} builds[d, b] * buildingCost[b];
@@ -40,10 +43,10 @@ s.t. buildOnlyTwo{b in Buildings}:
     sum{d in Days} builds[d, b] <= 2;
 
 s.t. isLimberMillUp{d in Days}:
-    advanedMining[d] = sum{b in Buildings: b = 'LumberMill'} builds[d, b] * advancedMiningValue;
+    advanedMining[d] = advanedMining[d-1] + sum{b in Buildings: b = 'LumberMill'} builds[d, b] * advancedMiningValue;
 
-s.t. buildInTime{d in Days}:
-    0 <= mines[d] * miningValue + sum{b in Buildings} builds[d, b] * buildingTime[b] <= GameDuration;
+s.t. buildInTime:
+    sum{d in Days} mines[d] * miningDuration + sum{d in Days, b in Buildings} builds[d, b] * buildingTime[b] <= GameDuration;
 
 
 s.t. getTotalValue:

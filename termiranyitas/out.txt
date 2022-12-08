@@ -1,21 +1,23 @@
 Total Value: 8560
 
-Total Cost: 4280 <= Total Gold: 4280
+Total Cost: 4280 <= Total Gold: 4740
 
 Total Duration: 2130
 
-Days: 1         Mining Value: 1000      Advanced Mining: 0      Gold at the end of the day: 1000
-Days: 2         Mining Value: 1000      Advanced Mining: 0      Gold at the end of the day: 2000
-Days: 3         Mining Value: 1000      Advanced Mining: 0      Gold at the end of the day: 3000
-Days: 4         Mining Value: 400       Advanced Mining: 80     Gold at the end of the day: 2580
-Days: 5         Mining Value: 200       Advanced Mining: 0      Gold at the end of the day: 0
-Days: 6         Mining Value: 600       Advanced Mining: 0      Gold at the end of the day: 0
-Days: 4         Building Value: 680     Building Cost: 340      Building: Tower
-Days: 4         Building Value: 640     Building Cost: 320      Building: ArcaneVault
-Days: 4         Building Value: 480     Building Cost: 240      Building: LumberMill
-Days: 5         Building Value: 920     Building Cost: 460      Building: AltarOfKings
-Days: 5         Building Value: 1160    Building Cost: 580      Building: ArcaneSanctum
-Days: 5         Building Value: 2360    Building Cost: 1180     Building: TownHall
-Days: 5         Building Value: 1120    Building Cost: 560      Building: Workshop
-Days: 6         Building Value: 800     Building Cost: 400      Building: Blacksmith
-Days: 6         Building Value: 400     Building Cost: 200      Building: Farm
+Day: 1          Mining Value: 900       Advanced Mining: 60     Gold at the end of the day: 840
+Day: 2          Mining Value: 1000      Advanced Mining: 60     Gold at the end of the day: 1900
+Day: 3          Mining Value: 1000      Advanced Mining: 60     Gold at the end of the day: 2960
+Day: 4          Mining Value: 400       Advanced Mining: 120    Gold at the end of the day: 2610
+Day: 6          Mining Value: 900       Advanced Mining: 120    Gold at the end of the day: 460
+Day: 1          Building Value: 240     Building Cost: 120      Building: LumberMill
+Day: 4          Building Value: 460     Building Cost: 230      Building: AltarOfKings
+Day: 4          Building Value: 640     Building Cost: 320      Building: ArcaneVault
+Day: 4          Building Value: 400     Building Cost: 200      Building: Farm
+Day: 4          Building Value: 240     Building Cost: 120      Building: LumberMill
+Day: 5          Building Value: 460     Building Cost: 230      Building: AltarOfKings
+Day: 5          Building Value: 1160    Building Cost: 580      Building: ArcaneSanctum
+Day: 5          Building Value: 680     Building Cost: 340      Building: Tower
+Day: 5          Building Value: 800     Building Cost: 400      Building: Blacksmith
+Day: 5          Building Value: 1180    Building Cost: 590      Building: TownHall
+Day: 5          Building Value: 1120    Building Cost: 560      Building: Workshop
+Day: 6          Building Value: 1180    Building Cost: 590      Building: TownHall

@@ -1,7 +1,7 @@
 Problem:    model
-Rows:       45
-Columns:    77 (73 integer, 0 binary)
-Non-zeros:  456
+Rows:       41
+Columns:    78 (74 integer, 0 binary)
+Non-zeros:  463
 Status:     INTEGER OPTIMAL
 Objective:  TotalValue = 8560 (MAXimum)
 
@@ -21,67 +21,58 @@ Objective:  TotalValue = 8560 (MAXimum)
                                   10            10             =
      7 initializeGold
                                    0            -0             =
-     8 calcGold[1]                 0            -0             =
-     9 calcGold[2]                 0            -0             =
-    10 calcGold[3]                 0            -0             =
-    11 calcGold[4]                 0            -0             =
-    12 calcGold[5]                 0            -0             =
-    13 calcGold[6]                 0            -0             =
-    14 limitGold[1]            -1000                          -0
-    15 limitGold[2]            -2000                          -0
-    16 limitGold[3]            -3000                          -0
-    17 limitGold[4]            -2580                          -0
-    18 limitGold[5]                0                          -0
-    19 limitGold[6]                0                          -0
-    20 buildOnlyTwo[AltarOfKings]
-                                   2                           2
-    21 buildOnlyTwo[ArcaneSanctum]
-                                   2                           2
-    22 buildOnlyTwo[Tower]
-                                   2                           2
-    23 buildOnlyTwo[ArcaneVault]
-                                   2                           2
-    24 buildOnlyTwo[Blacksmith]
-                                   2                           2
-    25 buildOnlyTwo[Farm]
-                                   2                           2
-    26 buildOnlyTwo[LumberMill]
-                                   2                           2
-    27 buildOnlyTwo[TownHall]
-                                   2                           2
-    28 buildOnlyTwo[Workshop]
-                                   2                           2
-    29 isLimberMillUp[1]
+     8 initializeAdvancedMining
                                    0            -0             =
-    30 isLimberMillUp[2]
+     9 calcGold[1]                 0            -0             =
+    10 calcGold[2]                 0            -0             =
+    11 calcGold[3]                 0            -0             =
+    12 calcGold[4]                 0            -0             =
+    13 calcGold[5]                 0            -0             =
+    14 calcGold[6]                 0            -0             =
+    15 limitGold[1]             -840                          -0
+    16 limitGold[2]            -1900                          -0
+    17 limitGold[3]            -2960                          -0
+    18 limitGold[4]            -2610                          -0
+    19 limitGold[5]              -30                          -0
+    20 limitGold[6]             -460                          -0
+    21 buildOnlyTwo[AltarOfKings]
+                                   2                           2
+    22 buildOnlyTwo[ArcaneSanctum]
+                                   2                           2
+    23 buildOnlyTwo[Tower]
+                                   2                           2
+    24 buildOnlyTwo[ArcaneVault]
+                                   2                           2
+    25 buildOnlyTwo[Blacksmith]
+                                   2                           2
+    26 buildOnlyTwo[Farm]
+                                   2                           2
+    27 buildOnlyTwo[LumberMill]
+                                   2                           2
+    28 buildOnlyTwo[TownHall]
+                                   2                           2
+    29 buildOnlyTwo[Workshop]
+                                   2                           2
+    30 isLimberMillUp[1]
                                    0            -0             =
-    31 isLimberMillUp[3]
+    31 isLimberMillUp[2]
                                    0            -0             =
-    32 isLimberMillUp[4]
+    32 isLimberMillUp[3]
                                    0            -0             =
-    33 isLimberMillUp[5]
+    33 isLimberMillUp[4]
                                    0            -0             =
-    34 isLimberMillUp[6]
+    34 isLimberMillUp[5]
                                    0            -0             =
-    35 buildInTime[1]
-                                1000             0          1300
-    36 buildInTime[2]
-                                1000             0          1300
-    37 buildInTime[3]
-                                1000             0          1300
-    38 buildInTime[4]
-                                 740             0          1300
-    39 buildInTime[5]
-                                 940             0          1300
-    40 buildInTime[6]
-                                 810             0          1300
-    41 getTotalValue
+    35 isLimberMillUp[6]
                                    0            -0             =
-    42 getTotalCost                0            -0             =
-    43 getTotalGold                0            -0             =
-    44 getTotalDuration
+    36 buildInTime              2130                        2200
+    37 getTotalValue
                                    0            -0             =
-    45 TotalValue               8560
+    38 getTotalCost                0            -0             =
+    39 getTotalGold                0            -0             =
+    40 getTotalDuration
+                                   0            -0             =
+    41 TotalValue               8560
 
    No. Column name       Activity     Lower bound   Upper bound
 ------ ------------    ------------- ------------- -------------
@@ -98,7 +89,7 @@ Objective:  TotalValue = 8560 (MAXimum)
      6 builds[1,Farm]
                     *              0             0
      7 builds[1,LumberMill]
-                    *              0             0
+                    *              1             0
      8 builds[1,TownHall]
                     *              0             0
      9 builds[1,Workshop]
@@ -140,39 +131,39 @@ Objective:  TotalValue = 8560 (MAXimum)
     27 builds[3,Workshop]
                     *              0             0
     28 builds[4,AltarOfKings]
-                    *              0             0
+                    *              1             0
     29 builds[4,ArcaneSanctum]
                     *              0             0
     30 builds[4,Tower]
-                    *              2             0
+                    *              0             0
     31 builds[4,ArcaneVault]
                     *              2             0
     32 builds[4,Blacksmith]
                     *              0             0
     33 builds[4,Farm]
-                    *              0             0
-    34 builds[4,LumberMill]
                     *              2             0
+    34 builds[4,LumberMill]
+                    *              1             0
     35 builds[4,TownHall]
                     *              0             0
     36 builds[4,Workshop]
                     *              0             0
     37 builds[5,AltarOfKings]
-                    *              2             0
+                    *              1             0
     38 builds[5,ArcaneSanctum]
                     *              2             0
     39 builds[5,Tower]
-                    *              0             0
+                    *              2             0
     40 builds[5,ArcaneVault]
                     *              0             0
     41 builds[5,Blacksmith]
-                    *              0             0
+                    *              2             0
     42 builds[5,Farm]
                     *              0             0
     43 builds[5,LumberMill]
                     *              0             0
     44 builds[5,TownHall]
-                    *              2             0
+                    *              1             0
     45 builds[5,Workshop]
                     *              2             0
     46 builds[6,AltarOfKings]
@@ -184,21 +175,21 @@ Objective:  TotalValue = 8560 (MAXimum)
     49 builds[6,ArcaneVault]
                     *              0             0
     50 builds[6,Blacksmith]
-                    *              2             0
+                    *              0             0
     51 builds[6,Farm]
-                    *              2             0
+                    *              0             0
     52 builds[6,LumberMill]
                     *              0             0
     53 builds[6,TownHall]
-                    *              0             0
+                    *              1             0
     54 builds[6,Workshop]
                     *              0             0
-    55 mines[1]     *             10             0
+    55 mines[1]     *              9             0
     56 mines[2]     *             10             0
     57 mines[3]     *             10             0
     58 mines[4]     *              4             0
-    59 mines[5]     *              2             0
-    60 mines[6]     *              6             0
+    59 mines[5]     *              0             0
+    60 mines[6]     *              9             0
     61 totalValuePrintf
                                 8560
     62 totalCostPrintf
@@ -206,26 +197,28 @@ Objective:  TotalValue = 8560 (MAXimum)
     63 totalDurationPrintf
                                 2130
     64 totalGoldPrintf
-                                4280
+                                4740
     65 gold[0]      *              0             0
-    66 gold[1]      *           1000             0
-    67 gold[2]      *           2000             0
-    68 gold[3]      *           3000             0
-    69 gold[4]      *           2580             0
-    70 gold[5]      *              0             0
-    71 gold[6]      *              0             0
-    72 advanedMining[1]
+    66 gold[1]      *            840             0
+    67 gold[2]      *           1900             0
+    68 gold[3]      *           2960             0
+    69 gold[4]      *           2610             0
+    70 gold[5]      *             30             0
+    71 gold[6]      *            460             0
+    72 advanedMining[0]
                     *              0             0
-    73 advanedMining[2]
-                    *              0             0
-    74 advanedMining[3]
-                    *              0             0
-    75 advanedMining[4]
-                    *             80             0
-    76 advanedMining[5]
-                    *              0             0
-    77 advanedMining[6]
-                    *              0             0
+    73 advanedMining[1]
+                    *             60             0
+    74 advanedMining[2]
+                    *             60             0
+    75 advanedMining[3]
+                    *             60             0
+    76 advanedMining[4]
+                    *            120             0
+    77 advanedMining[5]
+                    *            120             0
+    78 advanedMining[6]
+                    *            120             0
 
 Integer feasibility conditions:
 
