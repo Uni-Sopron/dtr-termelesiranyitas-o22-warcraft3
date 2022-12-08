@@ -37,9 +37,6 @@ s.t. initializeAdvancedMining:
 s.t. calcGold{d in Days}:
     gold[d] = gold[d-1] + mines[d] * miningValue + advanedMining[d] - sum{b in Buildings} builds[d, b] * buildingCost[b];
 
-s.t. limitGold{d in Days}:
-    0 <= gold[d];
-
 s.t. buildOnlyTwo{b in Buildings}:
     sum{d in Days} builds[d, b] <= 2;
 

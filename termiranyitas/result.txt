@@ -1,7 +1,7 @@
 Problem:    model
-Rows:       41
+Rows:       35
 Columns:    78 (74 integer, 0 binary)
-Non-zeros:  463
+Non-zeros:  457
 Status:     INTEGER OPTIMAL
 Objective:  TotalValue = 8560 (MAXimum)
 
@@ -29,50 +29,44 @@ Objective:  TotalValue = 8560 (MAXimum)
     12 calcGold[4]                 0            -0             =
     13 calcGold[5]                 0            -0             =
     14 calcGold[6]                 0            -0             =
-    15 limitGold[1]             -840                          -0
-    16 limitGold[2]            -1900                          -0
-    17 limitGold[3]            -2960                          -0
-    18 limitGold[4]            -2610                          -0
-    19 limitGold[5]              -30                          -0
-    20 limitGold[6]             -460                          -0
-    21 buildOnlyTwo[AltarOfKings]
+    15 buildOnlyTwo[AltarOfKings]
                                    2                           2
-    22 buildOnlyTwo[ArcaneSanctum]
+    16 buildOnlyTwo[ArcaneSanctum]
                                    2                           2
-    23 buildOnlyTwo[Tower]
+    17 buildOnlyTwo[Tower]
                                    2                           2
-    24 buildOnlyTwo[ArcaneVault]
+    18 buildOnlyTwo[ArcaneVault]
                                    2                           2
-    25 buildOnlyTwo[Blacksmith]
+    19 buildOnlyTwo[Blacksmith]
                                    2                           2
-    26 buildOnlyTwo[Farm]
+    20 buildOnlyTwo[Farm]
                                    2                           2
-    27 buildOnlyTwo[LumberMill]
+    21 buildOnlyTwo[LumberMill]
                                    2                           2
-    28 buildOnlyTwo[TownHall]
+    22 buildOnlyTwo[TownHall]
                                    2                           2
-    29 buildOnlyTwo[Workshop]
+    23 buildOnlyTwo[Workshop]
                                    2                           2
-    30 isLimberMillUp[1]
+    24 isLimberMillUp[1]
                                    0            -0             =
-    31 isLimberMillUp[2]
+    25 isLimberMillUp[2]
                                    0            -0             =
-    32 isLimberMillUp[3]
+    26 isLimberMillUp[3]
                                    0            -0             =
-    33 isLimberMillUp[4]
+    27 isLimberMillUp[4]
                                    0            -0             =
-    34 isLimberMillUp[5]
+    28 isLimberMillUp[5]
                                    0            -0             =
-    35 isLimberMillUp[6]
+    29 isLimberMillUp[6]
                                    0            -0             =
-    36 buildInTime              2130                        2200
-    37 getTotalValue
+    30 buildInTime              2130                        2200
+    31 getTotalValue
                                    0            -0             =
-    38 getTotalCost                0            -0             =
-    39 getTotalGold                0            -0             =
-    40 getTotalDuration
+    32 getTotalCost                0            -0             =
+    33 getTotalGold                0            -0             =
+    34 getTotalDuration
                                    0            -0             =
-    41 TotalValue               8560
+    35 TotalValue               8560
 
    No. Column name       Activity     Lower bound   Upper bound
 ------ ------------    ------------- ------------- -------------
